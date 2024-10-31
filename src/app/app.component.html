@@ -2,25 +2,32 @@
   <mat-toolbar color="primary">
     <span>Electronic Solutions</span>
     <span class="spacer"></span>
-    <button mat-button routerLink="/">Home</button>
-    <button mat-button routerLink="/about">About</button>
-    <button mat-button routerLink="/services">Services</button>
+    <button  class="botones" >
+      <a href="#inicio">inicio</a></button>
+    <button class="botones" >
+      <a href="#historia">historia</a></button>
+    <button class="botones">
+      <a href="#contactos"> contactos</a></button>
   </mat-toolbar>
 
   <br>
 
   <!-- Conocenos Section -->
-  <div class="section-title" style="text-align: center; color:rgb(33, 157, 151);">
-    <h1><em>Conócenos</em></h1>
+  <div id="inicio"class=" modak-regular ;" >
+    <div class="color">
+    <h1><em><u>Conócenos</u></em></h1>
+  </div>
   </div>
 
+  <br>
+
   <!-- Card with image -->
-  <mat-card class="example-card">
-    <img mat-card-image src="assets/logo.jpeg" alt="Nuestra Empresa">
-    <mat-card-header>
-      <mat-card-title>Electronic Solutions</mat-card-title>
+  <mat-card class="logo">
+    <img  src="assets/logo.jpeg" alt="Nuestra Empresa">
+    <mat-card-header >
+      <mat-card-title class="nanum">Electronic Solutions</mat-card-title>
     </mat-card-header>
-    <mat-card-content>
+    <mat-card-content class="nanum" class="anuncio">
       <p>¡Somos Los Mejores!</p>
     </mat-card-content>
     <mat-card-footer>
@@ -31,19 +38,41 @@
   <br>
 
   <!-- Historia, Operamos, Clientes Section -->
-  <div class="section-title" style="text-align: center; color:rgb(33, 157, 151);">
-    <h1><em>Desde El Inicio, Solucionando Tus Necesidades</em></h1>
+  <div  class="  modak-regular  ;" >
+    <div class="color">
+    <h1><em><u>Desde El Inicio, Solucionando Tus Necesidades</u></em></h1>
   </div>
+</div>
 
-  <mat-grid-list cols="3" rowHeight="2:1">
+
+<br>
+<br>
+
+
+<div class="ubicacion">
+  <h1>Algunos De NUestros Servicios</h1>
+ <p class="nanum"> •	Refrigeración: Instalación y mantenimiento de MiniSplits, <br>sistemas centrales, chillers y cámaras frigoríficas.
+    <br>
+    •	Electricidad: Instalaciones de baja y media tensión.<br> Para entornos residenciales, comerciales e industriales etc.
+                                                                                            
+    <b>
+ 
+    </b>
+    </p>
+    
+</div>
+<br>
+<br>
+
+  <mat-grid-list  id="historia"  cols="3" rowHeight="2:1">
     <mat-grid-tile>
-      <mat-card>
-        <mat-card-header>
+      <mat-card >
+        <mat-card-header >
           <mat-icon>history</mat-icon>
-          <mat-card-title>Nuestra Historia</mat-card-title>
+          <mat-card-title class="nanum">Nuestra Historia</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-          <p>Fundada en San Pedro Sula, 2013. Orientados a servicios eléctricos, telecomunicaciones, CCTV y más.</p>
+          <p><em>Fundada en San Pedro Sula, 2013. Orientados a servicios eléctricos, telecomunicaciones, CCTV y más.</em></p>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
@@ -51,10 +80,10 @@
       <mat-card>
         <mat-card-header>
           <mat-icon>location_on</mat-icon>
-          <mat-card-title>Donde Operamos</mat-card-title>
+          <mat-card-title class="nanum">Donde Operamos</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-          <p>Operamos en todo el país, con sede en San Pedro Sula para proyectos HFC y FFTH.</p>
+          <p><em>Operamos en todo el país, con sede en San Pedro Sula para proyectos HFC y FFTH.</em></p>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
@@ -62,21 +91,49 @@
       <mat-card>
         <mat-card-header>
           <mat-icon>business</mat-icon>
-          <mat-card-title>Principales Clientes</mat-card-title>
+          <mat-card-title class="nanum">Principales Clientes</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-          <p>Trabajamos con clientes como Grupo Comidas, Cable Color, Cervecería Hondureña y más.</p>
+          <p><em>Trabajamos con clientes como Grupo Comidas, Cable Color, Cervecería Hondureña y más.</em></p>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
 
+ <br>
+
+  <div id="carouselExample" class="carousel ">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../assets/mi_imajen.jpg" class="d-block w-100" alt="trabajadores">
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/empresa.jpg" class="d-block w-100" alt="nivel empresarial">
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/elec.jpg" class="d-block w-100" alt="Electronic">
+      </div>
+    </div>
+    <button class="carousel-control-prev buttoncarusel" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next buttoncarusel" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
   <br>
 
   <!-- Contact Us Section -->
-<div class="section-title" style="text-align: center; color:rgb(33, 157, 151);">
-  <h1><em>Contáctanos</em></h1>
+<div  id="contactos" class=" modak-regular ;">
+  <div class="color">
+  <h1><em><u>Contáctanos</u></em></h1>
 </div>
+</div>
+<br>
 
 <mat-card class="contact-card">
   <mat-card-content>
@@ -91,12 +148,29 @@
         <textarea matInput placeholder="Escribe tu mensaje aquí" rows="4" required></textarea>
       </mat-form-field>
 
-      <button mat-raised-button color="primary" type="submit">Enviar</button>
+      <button mat-raised-button class="botones" color="primary" type="submit">Enviar</button>
     </form>
   </mat-card-content>
 </mat-card>
+<br>
+
+<div>
+
+<div class="contenedor">
+  <a href="https://facebook.com/la mundial" class="facebook">
+    <i class="fa-brands fa-square-facebook"></i>
+  </a>
+
+    <a href="#" class="whatsapp">
+      <i class="fa-brands fa-square-whatsapp"></i>
+    </a>
+</div>
 
 
+
+
+
+<div>
   <!-- Footer -->
   <footer class="footer">
     <div style="text-align: center;">
